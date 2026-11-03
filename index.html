@@ -619,7 +619,7 @@
 
             try {
                 const zipBlob = await zip.generateAsync({ type: 'blob' });
-                triggerBrowserDownload(zipBlob, `optisqueeze_batch_${Date.now()}.zip`);
+                triggerBrowserDownload(zipBlob, `teknawy_batch_${Date.now()}.zip`);
             } catch (err) {
                 showToast("Could not generate ZIP archive.", "error");
             } finally {
